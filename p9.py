@@ -18,4 +18,5 @@ with sync_playwright() as p:
         print('This is passed wah')
     else:
         print('This is failed')
+    print("Hussain Github")
     page.wait_for_timeout(3000)
