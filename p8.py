@@ -5,4 +5,5 @@ with sync_playwright() as p:
         page.goto('https://demo.automationtesting.in/Alerts.html')
         page.wait_for_selector('//a[@href="#CancelTab"]').click()
         page.wait_for_selector('//div[@id="CancelTab"]').click()
+        print("Hussain")
         page.wait_for_timeout(3000)
