@@ -2,7 +2,9 @@
 # In this program I clicked on radio button and on the checkbox. Also check the validation using if nd else condition
 
 from playwright.sync_api import sync_playwright
-with sync_playwright() as p:
+
+def test_checkbox():
+ with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
     page = browser.new_page()
     page.goto('https://demo.automationtesting.in/Register.html')
