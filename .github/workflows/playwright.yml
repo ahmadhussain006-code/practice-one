@@ -17,6 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pytest
+          pip install pytest-html
           pip install playwright
           playwright install
 
